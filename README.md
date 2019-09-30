@@ -14,7 +14,7 @@ The user will have access to view photos, videos, and details of them provided b
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=1%3A21
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
 
 
 ## API Snippet
@@ -118,7 +118,7 @@ PostMVP - Enable users to identify their favorite videos and photos. Organize th
 Define the the React components and the architectural design of your app:
 
 Page 3: 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A23
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
 
 ## Priority Matrix
 
@@ -126,7 +126,7 @@ Add in a picture of your Priority Matrix
 
 Page 4: 
 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A23
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
           
           
           
@@ -140,11 +140,13 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | Header | This will render the header, including the nav tags that contain links to the "Photos" and "Videos" components. | 
+| Main | It will render links of photos and videos along with futher details of any link selected. 
 | Footer | This will render the footer, including links referencing the API and info about me. | 
-| Photos | It will render links to the photos available in the API. 
-| Videos | It will render links to the videos available in the API.
-| trending | It will render a symbol indicating how a video or photo is trending relative to other ones. 
-| Details | It will render details about any photo or video a user selects.
+| PhotosLink | Source of links to the photos available in the API. 
+| VideosLink | Source of inks to the videos available in the API.
+| PhotosDetails | Provide details of specific photo link chosen plus an indicator of how a photo is trending compared to others.
+| VideoDetails |  Provide details of specific video link chosen plus an indicator of how a video is trending compared to others.
+
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
@@ -159,7 +161,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 
 ## Additional Libraries
-N/A
+axios and router (PostMVP: React Carousel)
 
 ## Code Snippet
 

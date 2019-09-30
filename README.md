@@ -117,46 +117,16 @@ PostMVP - Enable users to identify their favorite videos and photos. Organize th
 
 Define the the React components and the architectural design of your app:
 
-App  -------------------------
- |                           |
-Header ------              Footer 
- |          |    
- Photos Videos
- |          | 
-  ----------
-      |
-   ---------
-  |         |  
- trending Details 
+Page 3: 
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A23
 
 ## Priority Matrix
 
 Add in a picture of your Priority Matrix
 
-          Importance 
-          |
-          |     *Getting API
-          |
-          |                         *MVP
-          |                         *Styling      
-          |
-          |                                         *PostMVP
-          |
-          |
-          |
-          |
-          |
-          |
-----------|----------------------------------------------
-          |                                           Time
-          |
-          |
-          |
-          |
-          |
-          |
-          |
-          |
+Page 4: 
+
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A23
           
           
           

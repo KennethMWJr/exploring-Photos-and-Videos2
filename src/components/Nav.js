@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom'
 const Nav = () => {
     return(
         <nav> 
-            <h1>Title Placeholder</h1>
             <ul>
                 <li><Link to="/photos">Photos</Link></li>
                 <li><Link to="/videos">Videos</Link></li>

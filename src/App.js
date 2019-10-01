@@ -6,14 +6,15 @@ import axios from 'axios';
 import Nav  from './components/Nav'
 import Header from './components/Header'
 import Main from './components/Main'
+import Home from './components/Home'
+import ReactPlayer from 'react-player'
 
 const apiKey = '13787226-5bcddae04b6863621607f7b63';
 
 const seePhotoData = `https://pixabay.com/api/?key=${apiKey}&q=yellow+flowers&image_type=photo`
 const seeVideoData = `https://pixabay.com/api/videos/?key=${apiKey}&q=yellow+flowers`
 
-// console.log(seePhotoData);
-// console.log(seeVideoData);
+
 
 class App extends Component {
   constructor() {
@@ -22,22 +23,26 @@ class App extends Component {
       photos: [],
       videos: []
     }
+    this.componentDidMount = this.componentDidMount.bind(this)
   }
+
 
 
 
 async componentDidMount() {
     const photoInfo = await axios.get(seePhotoData)
-    console.log(photoInfo)
+    const photos = photoInfo.data.hits
+    // console.log(photoInfo)
     let videoInfo = await axios.get(seeVideoData)
-    console.log(videoInfo); 
+    const videos = videoInfo.data.hits
+    // console.log(videoInfo); 
     this.setState({
-      photos: photoInfo.data.hits
-      videos: videoInfo.data.hits
+      photos: photos,
+      videos: videos
       
     })
-    console.log(photoInfo.data.hits)
-    console.log(videoInfo.data.hits)  
+    // console.log(photos)
+    // console.log(videos)  
     
   }
   
@@ -48,11 +53,11 @@ async componentDidMount() {
 
 
 render() {
+  
   return (
     <div className="App">
       <Header />
-      
-      
+      <Main photos={this.state.photos} videos={this.state.videos} />   
       
     </div>
   );

@@ -1,7 +1,23 @@
 import React, {Component} from 'react'
+import PhotoDisplay from './PhotoDisplay'
 
 
 
 
+class PhotoLinks extends Component {
 
-export default PhotoLink; 
+    
+
+    render() {
+      
+        return(
+            <div>
+                <PhotoDisplay />
+            </div>
+        )
+    }
+}
+
+
+
+export default PhotoLinks; 

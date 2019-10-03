@@ -12,7 +12,7 @@ class Main extends Component {
 
     render() {
         // console.log(this.props.photos);
-        // console.log(this.props.videos)
+     console.log(this.props.videos)
 
         return (
             <div>

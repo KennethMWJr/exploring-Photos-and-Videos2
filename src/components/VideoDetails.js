@@ -1,33 +1,26 @@
 import React, { Component } from 'react'; 
 
 
+
 class VideoDetails extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
-
+ 
 
     render() {
-        console.log(this.props.video)
+        console.log(this.props.video.views)
 
 
 
         return(
             <div> 
-                {/* <p>{this.props.video.tags}</p> */}
-                {/* grab props of videos correctly */}
-                {/* console log props to get data  */}
-                {/* set info with props with correct paths */}
-                {/* put that info in curly braces */}
+                <p>Tags: {this.props.video.tags}</p>
+                <p># of Likes: {this.props.video.likes}</p>
+                <p># of Views: {this.props.video.views}</p>  
+                <p># of Downloads: {this.props.video.downloads}</p>
+   
                 {/* do the same for photos */}
 
             </div>
         )
     }
-
-
-
 }
 export default VideoDetails; 

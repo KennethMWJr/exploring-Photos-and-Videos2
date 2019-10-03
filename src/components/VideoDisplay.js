@@ -21,16 +21,19 @@ class VideoDisplay extends Component {
 
     render() {
         
-            
+          
 
         return (
             <div>
                 <ReactPlayer url={this.props.video.videos.large.url} alt={this.props.video.tag} loop="true" playing />
                 <button onClick={this.handleClick}>CLICK TO SEE MORE</button>
-                {this.state.showDetails && <VideoDetails />}
+                {this.state.showDetails && <VideoDetails video={this.props.video}/>}
+                
             </div>
         )
+        
     }
+    
 }
 
 export default VideoDisplay;

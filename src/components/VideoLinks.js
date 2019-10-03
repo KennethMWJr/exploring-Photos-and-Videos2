@@ -14,6 +14,7 @@ class VideoLinks extends Component {
                 {this.props.videos.map((video, i) => (
                     <div key={i}>
                     <VideoDisplay video={video} />
+                    
                     </div>
                 ))}
                 

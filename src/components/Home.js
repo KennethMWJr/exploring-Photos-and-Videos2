@@ -2,8 +2,16 @@ import React from 'react'
 
 const Home = () => {
    return(
-   <div> 
-        <p>Content will appear soon</p>
+    <div> 
+        <h2>Welcome</h2>
+        <p>Relax your mind with these photos and videos.</p>
+        <p>Videos do have sound.</p>
+        <h2>Click</h2>
+        <p>Button below each one for more info.</p>
+        <h2>Remember</h2>
+        <p>Return home when done.</p>
+
+
     </div>
    )
 }

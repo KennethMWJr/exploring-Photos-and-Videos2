@@ -9,7 +9,7 @@ class PhotoLinks extends Component {
     render() {
       
         return(
-            <div className="PhotoLinks">
+            <div className="photo-links">
                 {this.props.photos.map((photo, i) => (
                     <div key={i}>
                     <PhotoDisplay photo={photo} />

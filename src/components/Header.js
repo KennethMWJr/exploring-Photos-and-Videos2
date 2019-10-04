@@ -4,8 +4,8 @@ import Nav from "./Nav"
 
 const Header = () => {
     return(
-       <div>
-           <h1>Title Placeholder</h1>
+       <div className="Header">
+           <h1>Nature's Calming Effect</h1>
             <Nav />
        </div>
     )

@@ -4,23 +4,20 @@ html {
   background-color: black;
   color: whitesmoke;
  
+ 
 }
-header {
-  display: flex;
-  
+
+
+.upper-container {
+  display: flex; 
 
 }
+
 nav {
   border-style: solid;
   border-width: thin; 
   border-color: whitesmoke black;
   float: none;
-
- 
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
 
 }
 
@@ -28,52 +25,210 @@ ul {
   list-style: none;
   display: table;
   margin: auto; 
+  padding : 0px; 
+  
 }
 
 li {
   display: inline; 
-  padding: 5px 50px;
+  padding: 0px 50px;
   border-style: solid; 
   border-width: thin; 
   border-color: whitesmoke;
-
   
 }
 
 a {
   color: whitesmoke;
   text-decoration: none;
+  
 }
 
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-Main {
-
-  max-height: 320px; 
+.container, .Main {
+  height: 350px;
+  width: 100%;
   display: flex;
+  flex-direction: column; 
   align-items: center;
-  overflow: scroll; 
+  overflow: scroll;
+  text-align: center;
+ 
 }
 
-/* .container {
-  overflow: scroll; 
-} */
+.photo-display {
+  width: 100%;
+}
+
 
 img {
-  max-width: 640px;
-  max-height: 320px;
+  
+  width: 640px;
+  height: 350px; 
 }
+
+.button {
+  margin: 0px auto 5px auto; 
+  justify-content: center;
+  
+}
+
+button {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 25px;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 
 }
+
+.footer {
+  border-style: solid;
+  border-width: thin; 
+  border-color: whitesmoke black;
+  float: none;
+  padding: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer-image {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 375px) {
+
+  html {
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  .upper-container {
+    display: flex; 
+  
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  nav {
+    border-style: solid;
+    border-width: thin; 
+    border-color: whitesmoke black;
+    float: none;
+   
+ 
+  
+  }
+  
+  ul {
+    list-style: none;
+    display: table;
+    margin: auto; 
+    padding : 0px; 
+    
+    
+  }
+  
+  li {
+    display: inline; 
+    padding: 0px 25px;
+    border-style: solid; 
+    border-width: thin; 
+    border-color: whitesmoke;
+    
+    
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+  }
+  
+ 
+  
+  .container {
+    height: 350px;
+    width: 375px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    overflow: scroll;
+    text-align: center;
+   
+  }
+  
+  .photo-display {
+    width: 375px;
+  }
+
+  
+  
+  img {
+    width: 375px;
+    height: 350px; 
+  }
+
+  
+
+  video {
+    width: 70%;
+    height: 70%; 
+    object-fit: contain;
+    
+
+  }
+  
+  .button {
+    margin: 0px auto 5px auto; 
+    justify-content: center;
+    
+  }
+  
+  button {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 25px;
+  }
+  
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  
+  }
+  
+  .footer {
+    border-style: solid;
+    border-width: thin; 
+    border-color: whitesmoke black;
+    float: none;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .footer-image {
+    height: 40px;
+    width: 40px;
+  }
+
+
+
+
+}
+
+
+
+

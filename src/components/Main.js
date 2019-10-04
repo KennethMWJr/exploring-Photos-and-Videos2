@@ -4,20 +4,19 @@ import PhotoLinks from './PhotoLinks';
 import Header from './Header'
 import VideoLinks from './VideoLinks'
 import ReactPlayer from 'react-player'
-
-
+import Home from './Home'
 
 class Main extends Component {
 
 
     render() {
-        // console.log(this.props.photos);
-     console.log(this.props.videos)
+   
 
         return (
-            <div>
+            <div className="Main">
                 <Switch>
-
+                    
+                    <Route exact path="/home" component={Home} />
                     <Route exact path="/photos" render={() => <PhotoLinks photos={this.props.photos} />} />
                     <Route exact path="/videos" render={() => <VideoLinks videos={this.props.videos} />} />
 

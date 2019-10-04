@@ -17,12 +17,13 @@ class PhotoDisplay extends Component {
     }
 
     render() {
-    // "webformatURL" replaces largeImageURL
-
+    // "webformatURL" replaces largeImageURL if issue with size of photo.
         return ( 
-            <div className="PhotoSiplay">
+            <div className="photo-display">
                 <img src={this.props.photo.largeImageURL} alt={this.props.photo.tags[0]} />
-                <button onClick={this.handleClick}>CLICK TO SEE MORE</button>
+                <div className="button">
+                <button onClick={this.handleClick}>CLICK FOR INFO</button>
+                </div> 
                 {this.state.showDetails && <PhotoDetails photo={this.props.photo} />}
 
             </div>

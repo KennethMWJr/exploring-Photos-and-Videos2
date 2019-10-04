@@ -20,11 +20,11 @@ const seeVideoData = `https://pixabay.com/api/videos/?key=${apiKey}&q=yellow+flo
 class App extends Component {
   constructor() {
     super()
-    this.state = ({
-      photos: [],
-      videos: []
-    })
-    this.componentDidMount = this.componentDidMount.bind(this)
+      this.state = ({
+        photos: [],
+        videos: []
+      })
+  this.componentDidMount = this.componentDidMount.bind(this)
   }
 
 
@@ -33,36 +33,29 @@ class App extends Component {
 async componentDidMount() {
     const photoInfo = await axios.get(seePhotoData)
     const photos = photoInfo.data.hits
-     console.log(photoInfo)
+    
     let videoInfo = await axios.get(seeVideoData)
     const videos = videoInfo.data.hits
-    // console.log(videoInfo); 
+    
     this.setState({
       photos: photos,
       videos: videos
       
     })
-     console.log(photos)
-     console.log(videos)  
-    
+      
   }
   
-  
-  
-
-
-
-
 render() {
   
   return (
     <div className="App">
-      <Header />
-        <div className="container">
-          <Main photos={this.state.photos} videos={this.state.videos} />   
-        </div>
-      <Footer /> 
-      
+      <div className="outer-layer">
+        <Header className="upper-container"/>
+          <div className="container">
+            <Main className="main" photos={this.state.photos} videos={this.state.videos} />   
+          </div>
+        <Footer /> 
+      </div>
     </div>
   );
 }

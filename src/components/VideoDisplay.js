@@ -15,26 +15,29 @@ class VideoDisplay extends Component {
         this.setState(prevState => ({
             showDetails: !prevState.showDetails
         }))
-        // console.log(this.state.showDetails);
-        
+          
     } 
 
     render() {
         
           
-
         return (
-            <div>
-                <ReactPlayer url={this.props.video.videos.large.url} alt={this.props.video.tag} loop="true" playing />
+            <div className="video-display">
+                {/* might need to add "playing" (without quotes to the end of the tag) */}
+                <ReactPlayer url={this.props.video.videos.large.url} alt={this.props.video.tag} fluid={false} />
                 <button onClick={this.handleClick}>CLICK TO SEE MORE</button>
                 {this.state.showDetails && <VideoDetails video={this.props.video}/>}
                 
             </div>
-        )
-        
+        )        
     }
-    
 }
 
 export default VideoDisplay;
+// replace with what's currently in return ()
+{/* <div>
+<ReactPlayer url={this.props.video.videos.large.url} alt={this.props.video.tag} loop="true" playing />
+<button onClick={this.handleClick}>CLICK TO SEE MORE</button>
+{this.state.showDetails && <VideoDetails video={this.props.video}/>}
 
+</div> */}

@@ -14,7 +14,7 @@ The user will have access to view photos, videos, and details of them provided b
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A0
 
 
 ## API Snippet
@@ -118,7 +118,7 @@ PostMVP - Enable users to identify their favorite videos and photos. Organize th
 Define the the React components and the architectural design of your app:
 
 Page 3: 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A0
 
 ## Priority Matrix
 
@@ -126,7 +126,7 @@ Add in a picture of your Priority Matrix
 
 Page 4: 
 
-https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=0%3A1
+https://www.figma.com/file/SfcMfLqkQ6PUGcdwegEJ6W/Untitled?node-id=2%3A0
           
           
           

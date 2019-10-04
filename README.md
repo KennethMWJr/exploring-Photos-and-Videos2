@@ -140,24 +140,28 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | Header | This will render the header, including the nav tags that contain links to the "Photos" and "Videos" components. | 
+| Nav | Provides links for each page rendered. 
 | Main | It will render links of photos and videos along with futher details of any link selected. 
+| Home | Provides a welcome page. 
 | Footer | This will render the footer, including links referencing the API and info about me. | 
-| PhotosLink | Source of links to the photos available in the API. 
-| VideosLink | Source of inks to the videos available in the API.
-| PhotosDetails | Provide details of specific photo link chosen plus an indicator of how a photo is trending compared to others.
-| VideoDetails |  Provide details of specific video link chosen plus an indicator of how a video is trending compared to others.
+| PhotosLink | Source of photos available in the API. 
+| VideosLink | Source of videos available in the API.
+| PhotoDisplay | adding a button to each photo with an event listener for conditional rendering. 
+| VideoDisplay | adding a button to each video with an event listener for conditional rendering.
+| PhotosDetails | Provides details of specific photo link chosen plus an indicator of how a photo is trending compared to others.
+| VideoDetails |  Provides details of specific video link chosen plus an indicator of how a video is trending compared to others.
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | 5hrs | |  | |
-| Working with API | 5hrs | | | |
-| Adding CSS| 10hrs | | | |
-| Adding JSX| 10hrs | | | |
-| debugging | 8hrs | | | |
-| Total | 38hrs | | | |
+| Adding Form | 1 | 5hrs | 12hrs | 8hrs |
+| Working with API | 5 | 5hrs| 5hrs | 3hrs |
+| Adding CSS| 2 | 10hrs | 16hrs | 10hrs |
+| Adding JSX| 4 | 10hrs| 16hrs  | 12hrs |
+| debugging | 3 |8hrs | 5hrs | 3hrs|
+| Total |  |38hrs | 57hrs | 36hrs |
 
 
 ## Additional Libraries
@@ -166,12 +170,14 @@ axios and router (PostMVP: React Carousel)
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+            <div>
+		{this.props.videos.map((video, i) => (
+                    <div key={i}>
+                    <VideoDisplay video={video} />
+		    </div>
+		))}
+	    </div>
+Mapping over an array of objects in a component made me understand this function and passing props better. 
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.

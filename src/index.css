@@ -46,15 +46,17 @@ a {
 
 
 .container, .Main {
-  height: 350px;
+  height: 400px;
   width: 100%;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-color: white grey; 
   text-align: center;
  
 }
+
 
 .photo-display {
   width: 100%;
